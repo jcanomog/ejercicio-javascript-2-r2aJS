@@ -50,7 +50,7 @@ function addClass() {
   console.log('previous li: ' , previous);
 
   const allLiElement = document.querySelectorAll('li');
-  allLielement
+  
   console.log(allLiElement)
 
 }
