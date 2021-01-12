@@ -51,6 +51,16 @@ function addClass() {
 
   const allLiElement = document.querySelectorAll('li');
   
-  console.log(allLiElement)
+  for (var key in allLiElement) {
+    if(typeof(allLiElement[key]) == 'object') {
+      
+      let iterator = parseInt(key) + 1;
+      
+      if (iterator%2 === 0){
+        allLiElement[key].remove();
+      }
+    }
+  }
+  // console.log(allLiElement)
 
 }
